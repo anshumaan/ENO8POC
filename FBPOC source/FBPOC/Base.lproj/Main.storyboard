@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rDG-IZ-I4o">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Landing Page Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LandingPageController" customModule="FBPOC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTT-dO-9AF">
+                                <rect key="frame" x="182" y="280" width="236" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NYR-MO-a2n"/>
+                                    <constraint firstAttribute="width" constant="236" id="SvL-ET-TJz"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="fbLogin">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fbLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QpV-7E-rsI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yTT-dO-9AF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qHD-FR-KGX"/>
+                            <constraint firstItem="yTT-dO-9AF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="spu-11-F53"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Le-R6-hyy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="305"/>
+        </scene>
+        <!--Details Controller-->
+        <scene sceneID="AEA-on-S0A">
+            <objects>
+                <viewController storyboardIdentifier="FBDetailsController" id="xzn-Fs-jhF" customClass="FBDetailsController" customModule="FBPOC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QOB-Pr-2ai"/>
+                        <viewControllerLayoutGuide type="bottom" id="y9d-fz-Dcd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a0h-8Z-SMG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rck-Io-g3e">
+                                <rect key="frame" x="20" y="35" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="caL-5p-Nkv"/>
+                                    <constraint firstAttribute="height" constant="180" id="rki-XF-4sW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGk-oG-ufI">
+                                <rect key="frame" x="20" y="275" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFM-iX-A1v">
+                                <rect key="frame" x="20" y="280" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ht-sc-UXS">
+                                <rect key="frame" x="20" y="320" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lqa-cJ-20i">
+                                <rect key="frame" x="20" y="330" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMT-ha-fO6">
+                                <rect key="frame" x="20" y="245" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nFM-iX-A1v" firstAttribute="top" secondItem="xGk-oG-ufI" secondAttribute="bottom" constant="5" id="1GZ-kj-E2X"/>
+                            <constraint firstItem="Lqa-cJ-20i" firstAttribute="leading" secondItem="a0h-8Z-SMG" secondAttribute="leading" constant="20" id="1sN-Iq-dY4"/>
+                            <constraint firstItem="nFM-iX-A1v" firstAttribute="leading" secondItem="a0h-8Z-SMG" secondAttribute="leading" constant="20" id="AOg-x3-M1o"/>
+                            <constraint firstItem="9ht-sc-UXS" firstAttribute="leading" secondItem="a0h-8Z-SMG" secondAttribute="leading" constant="20" id="Chg-d8-RFx"/>
+                            <constraint firstItem="rck-Io-g3e" firstAttribute="top" secondItem="QOB-Pr-2ai" secondAttribute="bottom" constant="15" id="Hnb-sR-djr"/>
+                            <constraint firstItem="xGk-oG-ufI" firstAttribute="top" secondItem="EMT-ha-fO6" secondAttribute="bottom" constant="30" id="IgW-3v-fZJ"/>
+                            <constraint firstItem="rck-Io-g3e" firstAttribute="leading" secondItem="a0h-8Z-SMG" secondAttribute="leading" constant="20" id="K1N-er-AzF"/>
+                            <constraint firstItem="Lqa-cJ-20i" firstAttribute="top" secondItem="9ht-sc-UXS" secondAttribute="bottom" constant="10" id="Vf1-Ui-8xU"/>
+                            <constraint firstItem="9ht-sc-UXS" firstAttribute="top" secondItem="nFM-iX-A1v" secondAttribute="bottom" constant="40" id="YpT-9S-gm4"/>
+                            <constraint firstItem="EMT-ha-fO6" firstAttribute="leading" secondItem="a0h-8Z-SMG" secondAttribute="leading" constant="20" id="gIM-bb-m6C"/>
+                            <constraint firstItem="EMT-ha-fO6" firstAttribute="top" secondItem="rck-Io-g3e" secondAttribute="bottom" constant="30" id="kxC-fI-yNw"/>
+                            <constraint firstItem="xGk-oG-ufI" firstAttribute="leading" secondItem="a0h-8Z-SMG" secondAttribute="leading" constant="20" id="y18-Xe-one"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fbPic" destination="rck-Io-g3e" id="7YW-SE-YlW"/>
+                        <outlet property="fb_email" destination="EMT-ha-fO6" id="ZH2-cd-Mt6"/>
+                        <outlet property="first_name" destination="xGk-oG-ufI" id="ZcE-JG-LhO"/>
+                        <outlet property="last_name" destination="nFM-iX-A1v" id="4Mk-8k-LJu"/>
+                        <outlet property="timeZone" destination="9ht-sc-UXS" id="8Ww-Ln-Lle"/>
+                        <outlet property="user_age" destination="Lqa-cJ-20i" id="8k6-j3-LfB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="83i-0V-X6N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1744" y="336"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KaE-4D-agD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rDG-IZ-I4o" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RQz-Kb-Wwe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UG8-hk-cuW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NR7-qx-djG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="305"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fbLogin" width="126" height="20"/>
+    </resources>
+</document>
