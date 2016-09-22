@@ -296,13 +296,16 @@
 				TargetAttributes = {
 					B4719CC01D3546E7009B7338 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 					};
 					B4719CD41D3546E7009B7338 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 						TestTargetID = B4719CC01D3546E7009B7338;
 					};
 					B4719CDF1D3546E7009B7338 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 						TestTargetID = B4719CC01D3546E7009B7338;
 					};
 				};
@@ -642,6 +645,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kostas.drinkhopper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "fc358950-db4b-46fb-ae88-cea7d159b4d1";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -658,6 +662,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kostas.drinkhopper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "fc358950-db4b-46fb-ae88-cea7d159b4d1";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -671,6 +676,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eno8.FBPOCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBPOC.app/FBPOC";
 			};
 			name = Debug;
@@ -685,6 +691,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eno8.FBPOCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBPOC.app/FBPOC";
 			};
 			name = Release;
@@ -697,6 +704,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eno8.FBPOCUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = FBPOC;
 			};
 			name = Debug;
@@ -709,6 +717,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eno8.FBPOCUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = FBPOC;
 			};
 			name = Release;
