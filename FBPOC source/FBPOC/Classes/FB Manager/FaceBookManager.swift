@@ -22,6 +22,10 @@ protocol FacebookManagerDelegate{
     func failedToFetchUserDetails(error : NSError)
 }
 
+
+
+// MARK: FBSDKGraphRequest
+
 class FacebookManager: NSObject {
     
     var delegate : FacebookManagerDelegate!
