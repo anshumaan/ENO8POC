@@ -22,6 +22,8 @@ protocol FacebookManagerDelegate{
     func failedToFetchUserDetails(error : NSError)
 }
 
+// MARK: BRANCH 123
+
 class FacebookManager: NSObject {
     
     var delegate : FacebookManagerDelegate!
