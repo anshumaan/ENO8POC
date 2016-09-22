@@ -21,20 +21,20 @@ class FBDetailsController: UIViewController {
     var details: FBDetailModel?
     
     
-    func loadUserDetails(userDetail : FBDetailModel) {
+    func loadUserDetails(_ userDetail : FBDetailModel) {
         details = userDetail
     }
     
     override func viewDidLoad() {
         
-        let qualityOfServiceClass = QOS_CLASS_BACKGROUND
-        let backgroundQueue = dispatch_get_global_queue(qualityOfServiceClass, 0)
-        dispatch_async(backgroundQueue, {
+        let qualityOfServiceClass = DispatchQoS.QoSClass.background
+        let backgroundQueue = DispatchQueue.global(qos: qualityOfServiceClass)
+        backgroundQueue.async(execute: {
             
             let strPictureURL: String = (self.details?.url)!
-            let data = NSData(contentsOfURL : NSURL.init(string: strPictureURL)!)
+            let data = try? Data(contentsOf: URL.init(string: strPictureURL)!)
             
-            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            DispatchQueue.main.async(execute: { () -> Void in
                 self.fbPic?.image = UIImage(data : data!)
             })
         })
@@ -48,21 +48,21 @@ class FBDetailsController: UIViewController {
             user_age?.text   = "\(userAge)" + AppConstants.kAgeSuffix
         }
         
-        let tZone: NSTimeZone = NSTimeZone.localTimeZone()
-        let tzName: String = tZone.localizedName(NSTimeZoneNameStyle.Standard, locale: NSLocale.autoupdatingCurrentLocale())!
+        let tZone: TimeZone = TimeZone.autoupdatingCurrent
+        let tzName: String = tZone.localizedName(for: TimeZone.standard, locale: Locale.autoupdatingCurrent)!
         timeZone!.text = tzName
         
     }
     
-    func calcAge(birthday:String) -> Int{
-        let dateFormater = NSDateFormatter()
+    func calcAge(_ birthday:String) -> Int{
+        let dateFormater = DateFormatter()
         dateFormater.dateFormat = AppConstants.kDateFormat
-        let birthdayDate = dateFormater.dateFromString(birthday)
-        let calendar: NSCalendar! = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
-        let now: NSDate! = NSDate()
-        let calcAge = calendar.components(.Year, fromDate: birthdayDate!, toDate: now, options: [])
+        let birthdayDate = dateFormater.date(from: birthday)
+        let calendar: Calendar! = Calendar(identifier: Calendar.Identifier.gregorian)
+        let now: Date! = Date()
+        let calcAge = calendar.dateComponents(.year, from: birthdayDate!, to: now, options: [])
         let age = calcAge.year
-        return age
+        return age!
     }
 }
 

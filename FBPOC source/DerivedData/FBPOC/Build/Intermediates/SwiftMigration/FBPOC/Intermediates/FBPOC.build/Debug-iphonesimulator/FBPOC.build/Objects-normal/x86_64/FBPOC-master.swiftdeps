@@ -1,0 +1,11 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "4b1dc85a0a644d608fa053be28756050"
+build_time: [527864508, 146413000]
+inputs:
+  "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/Classes/Landing Page/LandingPageController.swift": [527864444, 0]
+  "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/AppDelegate.swift": [527864444, 0]
+  "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/Classes/FB Details /FBDetailsController.swift": [527864444, 0]
+  "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/Classes/App Alert/AppAlert.swift": [527864444, 0]
+  "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/Classes/FB Details /FBDetailModel.swift": [527864444, 0]
+  "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/Classes/FB Manager/FaceBookManager.swift": [527864444, 0]
+  "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/Classes/FB Details /AppConstants.swift": [527864444, 0]

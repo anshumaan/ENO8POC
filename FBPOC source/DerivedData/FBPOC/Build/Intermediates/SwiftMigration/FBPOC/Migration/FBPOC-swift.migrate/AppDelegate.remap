@@ -1,0 +1,73 @@
+[
+ {
+  "file": "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/AppDelegate.swift",
+  "offset": 311,
+  "text": "_ ",
+ },
+ {
+  "file": "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/AppDelegate.swift",
+  "offset": 385,
+  "remove": 8,
+  "text": "UIApplicationLaunchOptionsKey",
+ },
+ {
+  "file": "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/AppDelegate.swift",
+  "offset": 397,
+  "remove": 7,
+  "text": "y",
+ },
+ {
+  "file": "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/AppDelegate.swift",
+  "offset": 669,
+  "text": "_ ",
+ },
+ {
+  "file": "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/AppDelegate.swift",
+  "offset": 1187,
+  "text": "_ ",
+ },
+ {
+  "file": "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/AppDelegate.swift",
+  "offset": 1625,
+  "text": "_ ",
+ },
+ {
+  "file": "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/AppDelegate.swift",
+  "offset": 1856,
+  "text": "_ ",
+ },
+ {
+  "file": "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/AppDelegate.swift",
+  "offset": 2122,
+  "text": "_ ",
+ },
+ {
+  "file": "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/AppDelegate.swift",
+  "offset": 2414,
+  "text": "_ ",
+ },
+ {
+  "file": "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/AppDelegate.swift",
+  "offset": 2445,
+  "remove": 4,
+  "text": "n",
+ },
+ {
+  "file": "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/AppDelegate.swift",
+  "offset": 2454,
+  "remove": 3,
+  "text": " ",
+ },
+ {
+  "file": "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/AppDelegate.swift",
+  "offset": 2504,
+  "remove": 7,
+  "text": "y",
+ },
+ {
+  "file": "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/AppDelegate.swift",
+  "offset": 2612,
+  "remove": 4,
+  "text": "n",
+ }
+]

@@ -10,23 +10,23 @@ import Foundation
 import UIKit
 
 
-func displaySuccessAlert(message:String, controller: UIViewController){
+func displaySuccessAlert(_ message:String, controller: UIViewController){
     
     displayAlert("Success", messageStr: message, controller: controller);
 }
 
 
-func displayErrorAlert( message:String, controller: UIViewController){
+func displayErrorAlert( _ message:String, controller: UIViewController){
  
     displayAlert("Error", messageStr: message, controller: controller);
 }
 
-func displayAlert(titleStr: String, messageStr:String , controller: UIViewController){
+func displayAlert(_ titleStr: String, messageStr:String , controller: UIViewController){
     
-    let alertController = UIAlertController(title: titleStr, message: messageStr, preferredStyle: .Alert)
+    let alertController = UIAlertController(title: titleStr, message: messageStr, preferredStyle: .alert)
     
-    let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+    let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
     alertController.addAction(defaultAction)
     
-    controller.presentViewController(alertController, animated: true, completion: nil)
+    controller.present(alertController, animated: true, completion: nil)
 }

@@ -24,7 +24,7 @@ class LandingPageController: UIViewController, FacebookManagerDelegate {
     }
 
 //MARK: FACEBOOK LOGIN ACTION
-    @IBAction func fbLogin(sender : UIButton) {
+    @IBAction func fbLogin(_ sender : UIButton) {
     
         let fbMgr: FacebookManager = FacebookManager.sharedInstance
         fbMgr.delegate = self
@@ -32,26 +32,26 @@ class LandingPageController: UIViewController, FacebookManagerDelegate {
     }
 
 //MARK: FACEBOOK OPERATION SUCCESS DELEGATE
-    func fbUserDetailsFetched(userDict : FBDetailModel) {
+    func fbUserDetailsFetched(_ userDict : FBDetailModel) {
     
-        let controller = self.storyboard?.instantiateViewControllerWithIdentifier(AppConstants.kController) as? FBDetailsController
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: AppConstants.kController) as? FBDetailsController
         controller?.loadUserDetails(userDict)
         self.navigationController?.pushViewController(controller!, animated: true)
     }
     
-    func facebookLoggedIn(accessToken : String) {
+    func facebookLoggedIn(_ accessToken : String) {
         let fbMgr: FacebookManager = FacebookManager.sharedInstance
         fbMgr.getFBUserData()
         
     }
  
 //MARK: FACEBOOK OPERATION FAILURE DELEGATE
-    func faceboolLoginFailed(error : NSError) {
+    func faceboolLoginFailed(_ error : NSError) {
         
         displayErrorAlert(error.localizedDescription, controller: self)
     }
     
-    func failedToFetchUserDetails(error: NSError) {
+    func failedToFetchUserDetails(_ error: NSError) {
         
         displayErrorAlert(error.localizedDescription, controller: self)
     }

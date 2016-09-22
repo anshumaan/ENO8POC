@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "685de40c61a6e89c92759b7e1c8c661e"
+build_time: [527864517, 785532000]
+inputs:
+  "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOCTests/FBPOCTests.swift": [527864444, 0]

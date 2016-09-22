@@ -14,12 +14,12 @@ import UIKit
 
 protocol FacebookManagerDelegate{
   
-    func facebookLoggedIn(accessToken : String)
-    func faceboolLoginFailed(error : NSError)
+    func facebookLoggedIn(_ accessToken : String)
+    func faceboolLoginFailed(_ error : NSError)
     func facebookLoginCancelled()
     
-    func fbUserDetailsFetched(userDict : FBDetailModel)
-    func failedToFetchUserDetails(error : NSError)
+    func fbUserDetailsFetched(_ userDict : FBDetailModel)
+    func failedToFetchUserDetails(_ error : NSError)
 }
 
 class FacebookManager: NSObject {
@@ -29,15 +29,15 @@ class FacebookManager: NSObject {
 
     func logIn() {
         
-        if (FBSDKAccessToken.currentAccessToken() == nil) {
+        if (FBSDKAccessToken.current() == nil) {
             
             let fbLoginManager: FBSDKLoginManager = FBSDKLoginManager()
    
-            fbLoginManager.logInWithReadPermissions(AppConstants.kReadPermissionArray, fromViewController: nil) { (result, error) in
+            fbLoginManager.logIn(withReadPermissions: AppConstants.kReadPermissionArray, from: nil) { (result, error) in
 
                 if ((error) != nil) {
                 
-                    self.delegate?.faceboolLoginFailed(error)
+                    self.delegate?.faceboolLoginFailed(error as! NSError)
                 
                 }else if let fbLogInResult: FBSDKLoginManagerLoginResult = result{
                     
@@ -47,7 +47,7 @@ class FacebookManager: NSObject {
                         
                     }else{
                         if (fbLogInResult.grantedPermissions.contains(AppConstants.kEmail)) {
-                            self.delegate?.facebookLoggedIn(FBSDKAccessToken.currentAccessToken().tokenString)
+                            self.delegate?.facebookLoggedIn(FBSDKAccessToken.current().tokenString)
                         }
                     }
                     
@@ -55,16 +55,16 @@ class FacebookManager: NSObject {
             }
         } else {
             
-          let fbAccessToken = FBSDKAccessToken.currentAccessToken().tokenString
-           self.delegate?.facebookLoggedIn(fbAccessToken)
+          let fbAccessToken = FBSDKAccessToken.current().tokenString
+           self.delegate?.facebookLoggedIn(fbAccessToken!)
         }
     }
     
     
     
     func getFBUserData() {
-        if((FBSDKAccessToken.currentAccessToken()) != nil){
-            FBSDKGraphRequest(graphPath: AppConstants.kUser, parameters: [AppConstants.kField: "\(AppConstants.kId), \(AppConstants.kName), \(AppConstants.kFirstName), \(AppConstants.kLastName), \(AppConstants.kPicture).type(large), \(AppConstants.kEmail), \(AppConstants.kBirthday), \(AppConstants.kTimezone)"]).startWithCompletionHandler({ (connection, result, error) -> Void in
+        if((FBSDKAccessToken.current()) != nil){
+            FBSDKGraphRequest(graphPath: AppConstants.kUser, parameters: [AppConstants.kField: "\(AppConstants.kId), \(AppConstants.kName), \(AppConstants.kFirstName), \(AppConstants.kLastName), \(AppConstants.kPicture).type(large), \(AppConstants.kEmail), \(AppConstants.kBirthday), \(AppConstants.kTimezone)"]).start(completionHandler: { (connection, result, error) -> Void in
                 
                 if (error == nil){
                     
@@ -74,7 +74,7 @@ class FacebookManager: NSObject {
                     
                 }else{
                     
-                    self.delegate?.failedToFetchUserDetails(error)
+                    self.delegate?.failedToFetchUserDetails(error as! NSError)
                 }
             })
         }

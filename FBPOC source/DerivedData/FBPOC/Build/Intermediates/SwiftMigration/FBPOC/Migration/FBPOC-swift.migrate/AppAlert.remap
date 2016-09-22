@@ -1,0 +1,35 @@
+[
+ {
+  "file": "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/Classes/App Alert/AppAlert.swift",
+  "offset": 201,
+  "text": "_ ",
+ },
+ {
+  "file": "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/Classes/App Alert/AppAlert.swift",
+  "offset": 355,
+  "text": "_ ",
+ },
+ {
+  "file": "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/Classes/App Alert/AppAlert.swift",
+  "offset": 497,
+  "text": "_ ",
+ },
+ {
+  "file": "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/Classes/App Alert/AppAlert.swift",
+  "offset": 670,
+  "remove": 1,
+  "text": "a",
+ },
+ {
+  "file": "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/Classes/App Alert/AppAlert.swift",
+  "offset": 741,
+  "remove": 1,
+  "text": "d",
+ },
+ {
+  "file": "/Volumes/Work/Client Work /ENO8/Git Branch Test /ENO8POC/FBPOC source/FBPOC/Classes/App Alert/AppAlert.swift",
+  "offset": 835,
+  "remove": 15,
+  "text": "t",
+ }
+]
